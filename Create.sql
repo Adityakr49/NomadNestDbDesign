@@ -43,9 +43,7 @@ CREATE TABLE booking (
 
 CREATE TABLE review (
     reviewid SERIAL PRIMARY KEY,
-    uid INT REFERENCES "user"(uid),
-    pid INT REFERENCES hotel(pid),
-    rid INT REFERENCES room(rid),
+    bid INT REFERENCES booking(bid),
     rating DECIMAL(2, 1),
     comment TEXT
 );
