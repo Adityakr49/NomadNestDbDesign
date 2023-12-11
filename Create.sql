@@ -34,7 +34,7 @@ CREATE TABLE booking (
     uid INT REFERENCES "user"(uid),
     pid INT REFERENCES hotel(pid),
     rid INT REFERENCES room(rid),
-    checkin DATE,
+    checkin DATE CHECK (checkin < checkout),
     checkout DATE,
     name VARCHAR(100),
     phone VARCHAR(15),

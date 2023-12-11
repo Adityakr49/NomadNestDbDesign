@@ -35,13 +35,13 @@ VALUES
   (5, 2, 5, '2023-12-05', '2023-12-10', 'Akash Verma', '8901234567', 22000.00);
 
 -- Insert values into the "review" table
-INSERT INTO review (uid, pid, rid, rating, comment)
+INSERT INTO review (bid, rating, comment)
 VALUES
-  (1, 1, 1, 4.5, 'An amazing experience at the Taj Mahal Hotel. The staff was very courteous, and the facilities were top-notch.'),
-  (2, 2, 4, 4.0, 'Great business hotel with excellent amenities. The meeting rooms were well-equipped, and the staff was professional.'),
-  (3, 3, 7, 4.8, 'Serenity Retreat lived up to its name. The natural surroundings and peaceful atmosphere made it a perfect getaway.'),
-  (4, 1, 2, 4.2, 'The Taj Suite was spacious and well-designed. The view of the Taj Mahal from the room was breathtaking.'),
-  (5, 2, 5, 4.7, 'The Business Suite provided a comfortable stay. The business amenities were convenient for my work trip.');
+  (1, 4.5, 'An amazing experience at the Taj Mahal Hotel. The staff was very courteous, and the facilities were top-notch.'),
+  (2, 4.0, 'Great business hotel with excellent amenities. The meeting rooms were well-equipped, and the staff was professional.'),
+  (3, 4.8, 'Serenity Retreat lived up to its name. The natural surroundings and peaceful atmosphere made it a perfect getaway.'),
+  (4, 4.2, 'The Taj Suite was spacious and well-designed. The view of the Taj Mahal from the room was breathtaking.'),
+  (5, 4.7, 'The Business Suite provided a comfortable stay. The business amenities were convenient for my work trip.');
   SELECT * FROM "user";
   SELECT * FROM hotel;
   SELECT * FROM booking;
