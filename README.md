@@ -25,11 +25,11 @@ The NomadNest project focuses on [provide a brief overview of the project's purp
 
 ## Feedback and Contributions
 
-Feel free to provide feedback or contribute to the project by [mention how users can contribute or provide feedback].
+Feel free to provide feedback or contribute to the project by creating a pull request.
 
 ## Acknowledgments
 
-This project was developed as part of the DBMS course in the 5th semester. Special thanks to [acknowledge any specific contributors or resources].
+This project was developed as part of the DBMS course in the 5th semester. Special thanks to my teammates.
 
 Happy coding!
 
