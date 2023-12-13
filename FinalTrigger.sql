@@ -107,23 +107,7 @@ $$ LANGUAGE plpgsql;
 CREATE TRIGGER before_booking_insert
 BEFORE INSERT ON booking
 FOR EACH ROW
-EXECUTE FUNCTION enforce_max_concurrent_bookings();-- 4)Trigger function for enforcing maximum concurrent bookings per user
-CREATE OR REPLACE FUNCTION enforce_max_concurrent_bookings()
-RETURNS TRIGGER AS $$
-BEGIN
-    IF (SELECT COUNT(*) FROM booking WHERE uid = NEW.uid AND checkin <= NEW.checkout AND checkout >= NEW.checkin) >= 3 THEN
-        RAISE EXCEPTION 'User cannot have more than 3 concurrent bookings.';
-    END IF;
-    RETURN NEW;
-END;
-$$ LANGUAGE plpgsql;
-
--- Trigger to execute the function before inserting a new booking
-CREATE TRIGGER before_booking_insert
-BEFORE INSERT ON booking
-FOR EACH ROW
 EXECUTE FUNCTION enforce_max_concurrent_bookings();
-
 
 -- 5. Trigger to check availability before booking
 CREATE OR REPLACE FUNCTION check_availability()
