@@ -263,11 +263,11 @@ VALUES
   
   
   --trigger 4
-  INSERT INTO booking (bid, uid, pid, rid, checkin, checkout, name, phone, price) VALUES
-  (1, 1, 1, 1, '2023-01-01', '2023-01-04', 'Booking 1', '1234567890', 25000.00),
-  (2, 1, 1, 2, '2023-01-02', '2023-01-05', 'Booking 2', '1234567890', 25000.00),
-  (3, 1, 1, 3, '2023-01-03', '2023-01-06', 'Booking 3', '1234567890', 15000.00),
-  (4, 1, 1, 1, '2023-01-04', '2023-01-07', 'Booking 4', '1234567890', 15000.00);
+  INSERT INTO booking (uid, pid, rid, checkin, checkout, name, phone, price) VALUES
+  (1, 1, 1, '2023-01-01', '2023-01-04', 'Booking 1', '1234567890', 25000.00),
+  (1, 1, 2, '2023-01-02', '2023-01-05', 'Booking 2', '1234567890', 25000.00),
+  (1, 1, 3, '2023-01-03', '2023-01-06', 'Booking 3', '1234567890', 15000.00),
+  (1, 1, 1, '2023-01-04', '2023-01-07', 'Booking 4', '1234567890', 15000.00);
   
   
   
@@ -278,4 +278,4 @@ update room set availability=false where rid=1;
 
 INSERT INTO booking (uid, pid, rid, checkin, checkout, name, phone, price)
 VALUES
-  (1, 1, 1, '2023-12-29', '2023-12-31', 'Arohi Arman', '9876543210', 10000.00),
+  (1, 1, 1, '2023-12-29', '2023-12-31', 'Arohi Arman', '9876543210', 10000.00);
