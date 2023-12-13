@@ -1,11 +1,11 @@
 -- Insert values into the "user" table
 INSERT INTO "user" (name, email, password, role, total_reviews)
 VALUES
-  ('Arohi Aditya', 'aditya@example.com', 'namaste123', 'admin', 0),
-  ('Priya Singh', 'priya@example.com', 'pyaar@123', 'customer', 0),
-  ('Aarav Gupta', 'aarav@example.com', 'ganesha456', 'customer', 0),
-  ('Meera Desai', 'meera@example.com', 'devi@123', 'customer', 0),
-  ('Akash Verma', 'akash@example.com', 'dilse123', 'customer', 0);
+  ('Arohi Arman', 'arman@example.com', 'secret', 'admin', 0),
+  ('Priya Oberoi', 'priya@example.com', 'pass@123', 'customer', 0),
+  ('Aarav Gupta', 'aarav@example.com', 'password', 'customer', 0),
+  ('Meera Desai', 'meera@example.com', 'key@123', 'customer', 0),
+  ('Akash Verma', 'akash@example.com', 'secret123', 'customer', 0);
   
   INSERT INTO hotel (uid, title, address, description, perks, checkin, checkout, avgrating)
 VALUES
@@ -28,8 +28,8 @@ VALUES
   
   INSERT INTO booking (uid, pid, rid, checkin, checkout, name, phone, price)
 VALUES
-  (1, 1, 1, '2023-12-15', '2023-12-20', 'Arohi Aditya', '9876543210', 25000.00),
-  (2, 2, 4, '2023-12-12', '2023-12-18', 'Priya Singh', '8765432109', 18000.00),
+  (1, 1, 1, '2023-12-15', '2023-12-20', 'Arohi Arman', '9876543210', 25000.00),
+  (2, 2, 4, '2023-12-12', '2023-12-18', 'Priya Oberoi', '8765432109', 18000.00),
   (3, 3, 7, '2023-12-08', '2023-12-15', 'Aarav Gupta', '7654321098', 24000.00),
   (4, 1, 2, '2023-12-02', '2023-12-06', 'Meera Desai', '7890123456', 15000.00),
   (5, 2, 5, '2023-12-05', '2023-12-10', 'Akash Verma', '8901234567', 22000.00);
@@ -47,7 +47,3 @@ VALUES
   SELECT * FROM booking;
   SELECT * FROM room;
   SELECT * FROM review;
-  INSERT INTO booking (uid, pid, rid, checkin, checkout, name, phone, price)
-VALUES
-  (1, 1, 3, '2023-12-23', '2023-12-24', 'Arohi Aditya', '9876543210', 12000.00);
-  SELECT * FROM room;
